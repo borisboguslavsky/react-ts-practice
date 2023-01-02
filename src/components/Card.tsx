@@ -17,11 +17,12 @@ const WrapperComponent: React.FC<WrapperComponentProps> = (props) => {
 				<h2>{props.title}</h2>
 				{props.description && (
 					<button
+						className={classes.infoButton}
 						onClick={() => {
 							setShowDescription((bool) => !bool);
 						}}
 					>
-						ⓘ
+						ℹ
 					</button>
 				)}
 			</div>
